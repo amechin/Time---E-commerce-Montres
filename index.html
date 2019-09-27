@@ -1,0 +1,370 @@
+ <!doctype html>
+ <html lang="en">
+
+ <head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link rel="stylesheet" href="./style.css" name="monstyle">
+     <title>Montres Homme</title>
+ </head>
+
+ <body class="bg-light">
+     <div class="container-fluid p-0">
+         <nav class="navbar navbar-expand-lg navbar-light border-bottom border-black-25 d-flex justify-content-between">
+             <a class="navbar-brand" href="#">
+                 <img src="./Img/logoTime.png" width="69" height="30" alt="logoTime" class="rounded">
+             </a>
+             <form class="form-inline my-2 my-lg-0">
+                 <div class="form-row">
+                     <div class="form-group col-md-8 pl-3">
+                         <input class="form-control border border-black-75 font-weight-lighter" type="search"
+                             placeholder="ex : Montre Nixon cuir" aria-label="Search">
+                     </div>
+                     <div class="form-group col-md-4">
+                         <button class="btn btn-outline-dark border border-black-75 font-weight-lighter"
+                             type="submit">Rechercher</button>
+                     </div>
+                 </div>
+             </form>
+             <small>
+                 <ul class="nav">
+                     <li class="nav-item">
+                         <a class="nav-link pl-0 text-dark font-weight-lighter text-uppercase" href="#">fr<span
+                                 class="sr-only">(current)</span></a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link pl-0 text-dark font-weight-lighter text-uppercase" href="#">eur</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link pl-0 text-dark font-weight-lighter text-uppercase" href="#">connection</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link pl-0 text-dark font-weight-bold text-uppercase" data-toggle="modal"
+                             data-target="#ModalPanier">panier</a>
+                     </li>
+                 </ul>
+             </small>
+         </nav>
+         <nav class="navbar navbar-light d-flex shadow-sm">
+             <small>
+                 <ul class="nav">
+                     <li class="nav-item">
+                         <a class="nav-link pl-0 text-dark font-weight-normal text-uppercase" href="#">montres<span
+                                 class="sr-only">(current)</span></a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link pl-0 text-dark font-weight-normal text-uppercase" href="#">marques</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link pl-0 text-dark font-weight-normal text-uppercase" href="#">à propos</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link pl-0 text-dark font-weight-normal text-uppercase" href="#">magazine</a>
+                     </li>
+                 </ul>
+             </small>
+             <small>
+                 <p class="m-0 text-dark font-weight-normal text-uppercase pr-3">2 ans de garantie du fabricant</p>
+             </small>
+         </nav>
+     </div>
+
+     <div class="container">
+         <div class="row d-flex justify-content-between mt-5 mb-3 mr-1">
+             <!--Breadcrumb-->
+             <nav aria-label="breadcrumb">
+                 <small>
+                     <ol class="breadcrumb bg-light ml-1 font-weight-lighter text-uppercase">
+                         <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-dark">Montre</a></li>
+                         <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-dark">Homme</a></li>
+                         <li class="breadcrumb-item active text-decoration-none text-danger" aria-current="page">Nixon
+                         </li>
+                     </ol>
+                 </small>
+             </nav>
+             <!-- Champ tri -->
+             <form>
+                 <select class="custom-select border border-black-75 font-weight-lighter">
+                     <option selected>Trier par</option>
+                     <option value="1">Prix ascendant</option>
+                     <option value="2">Prix décroissant</option>
+                 </select>
+             </form>
+         </div>
+         <div class="row d-flex justify-content-around px-0">
+             <div class="col-2 px-0">
+                 <a data-toggle="modal" data-target="#Modal1">
+                     <div class="card shadow-sm border-0">
+                         <figure>
+                             <img src="https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw87b058ac/products/A944-001-view1.jpg?sw=300&sh=330&sm=fit&sfrm=png"
+                                 class="card-img-top p-0" alt="img1">
+                         </figure>
+                         <div class="card-body py-1 px-3">
+                             <div class="row d-flex justify-content-around">
+                                 <h6 class="card-title text-dark font-weight-bolder text-center pt-1">Sentry Dark</h5>
+                                     <small>
+                                         <p class="card-text text-dark font-weight-light text-right pt-1">€ 110.00</p>
+                                     </small>
+                             </div>
+                         </div>
+                     </div>
+                 </a>
+             </div>
+
+             <!-- Modal Produit 1 -->
+             <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="ModalLabel1"
+                 aria-hidden="true">
+                 <div class="modal-dialog" role="document">
+                     <div class="modal-content">
+                         <div class="modal-body">
+                             <div class="row">
+                                 <div class="col-6">
+                                     <img src="https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw87b058ac/products/A944-001-view1.jpg?sfrm=png"
+                                         class="card-img-top p-0" alt="img1">
+                                 </div>
+                                 <div class="col-6">
+                                     <div class="row float-right">
+
+                                         <button type="button" class="close h-50 pr-3" data-dismiss="modal"
+                                             aria-label="Close">
+                                             <span aria-hidden="true">&times;</span>
+                                         </button>
+
+                                     </div>
+                                     <div class="row">
+                                         <h5 class="card-title text-dark font-weight-bolder text-center pt-2">Montre
+                                             Sentry Dark
+                                         </h5>
+                                     </div>
+                                     <div class="row">
+                                         <p class="card-text text-dark font-weight-light text-left">€ 110.00</p>
+                                     </div>
+                                     <div class="row">
+                                         <small>
+                                             <p
+                                                 class="card-text text-dark font-weight-bold text-uppercase text-left pt-4">
+                                                 Description
+                                             </p>
+                                         </small>
+                                     </div>
+                                     <div class="row">
+                                         <small>
+                                             <p class="card-text text-dark font-weight-light pt-1 pr-4 text-justify">
+                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere enim
+                                                 repellat, consectetur quod nemo reprehenderit vel, vero explicabo
+                                                 inventore nostrum sint fuga temporibus neque suscipit odit illo aut
+                                                 unde cum!
+                                             </p>
+                                         </small>
+                                     </div>
+
+                                 </div>
+                             </div>
+                             <div class="row float-right">
+                                 <button type="button" class="btn btn-sm btn-outline-dark mr-4">Ajouter</button>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+             <!-- Modal Panier -->
+             <div class="modal fade" id="ModalPanier" tabindex="-1" role="dialog" aria-labelledby="ModalLabel1"
+                 aria-hidden="true">
+                 <div class="modal-dialog" role="document">
+                     <div class="modal-content">
+                         <div class="modal-body">
+                             <div class="row">
+                                 <div class="col-6">
+                                     <img src="https://media.istockphoto.com/vectors/shopping-cart-icon-black-minimalist-icon-isolated-on-white-background-vector-id867290520"
+                                         class="card-img-top p-0" alt="img1">
+                                 </div>
+                                 <div class="col-6">
+                                     <div class="row float-right">
+                                         <button type="button" class="close h-50 pr-3" data-dismiss="modal"
+                                             aria-label="Close">
+                                             <span aria-hidden="true">&times;</span>
+                                         </button>
+                                     </div>
+                                     <div class="row">
+                                         <h5 class="card-title text-dark font-weight-bolder text-center pt-2">
+                                             Mon Panier
+                                         </h5>
+                                     </div>
+                                     <div class="row">
+                                         <small>
+                                             <p class="card-text text-dark font-weight-bold text-uppercase text-left pt-4">
+                                               
+                                             </p>
+                                         </small>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="row float-right">
+                                <button type="button" class="btn btn-sm btn-outline-dark mr-4">Poursuivre mes achats</button>
+                                 <button type="button" class="btn btn-sm btn-success mr-4">Valider mon panier</button>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="col-2 px-0">
+                 <div class="card shadow-sm border-0">
+                     <img src="https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw2033232a/products/A105-1602-view1.jpg?sw=300&sh=330&sm=fit&sfrm=png"
+                         class="card-img-top p-0" alt="img2">
+                     <div class="card-body py-1 px-3">
+                         <div class="row d-flex justify-content-around">
+                             <h6 class="card-title text-dark font-weight-bolder text-center pt-1">Sentry SS</h5>
+                                 <small>
+                                     <p class="card-text text-dark font-weight-light text-right pt-1">€ 220.00</p>
+                                 </small>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-2 px-0">
+                 <div class="card shadow-sm border-0">
+                     <img src="https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwae662f15/products/A045-957-view1.jpg?sw=300&sh=330&sm=fit&sfrm=png"
+                         class="card-img-top p-0" alt="img1">
+                     <div class="card-body py-1 px-3">
+                         <div class="row d-flex justify-content-around">
+                             <h6 class="card-title text-dark font-weight-bolder text-center pt-1">Sentry X</h5>
+                                 <small>
+                                     <p class="card-text text-dark font-weight-light text-right pt-1">€ 90.00</p>
+                                 </small>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-2 px-0">
+                 <div class="card shadow-sm border-0">
+                     <img src="https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw47aa5925/products/A377-595-view1.jpg?sw=300&sh=330&sm=fit&sfrm=png"
+                         class="card-img-top p-0" alt="img1">
+                     <div class="card-body py-1 px-3">
+                         <div class="row d-flex justify-content-around">
+                             <h6 class="card-title text-dark font-weight-bolder text-center pt-1">Sentry Code</h6>
+                             <small>
+                                 <p class="card-text text-dark font-weight-light text-right pt-1">€ 220.00</p>
+                             </small>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-2 px-0">
+                 <div class="card shadow-sm border-0">
+                     <img src="https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw3d6da21d/products/A405-1888-view1.jpg?sw=300&sh=330&sm=fit&sfrm=png"
+                         class="card-img-top p-0" alt="img1">
+                     <div class="card-body py-1 px-3">
+                         <div class="row d-flex justify-content-around">
+                             <h6 class="card-title text-dark font-weight-bolder text-center pt-1">Sentry Chrono</h5>
+                                 <small>
+                                     <p class="card-text text-dark font-weight-light text-right pt-1">€ 240.00</p>
+                                 </small>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+         <!--2eme ligne de produit-->
+
+         <div class="row d-flex justify-content-around px-0 mt-5">
+             <div class="col-2 px-0">
+                 <div class="card shadow-sm border-0">
+                     <img src="https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw173ec2c7/products/A1058-3173-view1.jpg?sw=300&sh=330&sm=fit&sfrm=png"
+                         class="card-img-top p-0" alt="img1">
+                     <div class="card-body py-1 px-3">
+                         <div class="row d-flex justify-content-around">
+                             <h6 class="card-title text-dark font-weight-bolder text-center pt-1">Porter Leather</h5>
+                                 <small>
+                                     <p class="card-text text-dark font-weight-light text-right pt-1">€ 140.00</p>
+                                 </small>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-2 px-0">
+                 <div class="card shadow-sm border-0">
+                     <img src="https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw962c1772/products/A1057-1932-view1.jpg?sw=300&sh=330&sm=fit&sfrm=png"
+                         class="card-img-top p-0" alt="img1">
+                     <div class="card-body py-1 px-3">
+                         <div class="row d-flex justify-content-around">
+                             <h6 class="card-title text-dark font-weight-bolder text-center pt-1">Porter</h5>
+                                 <small>
+                                     <p class="card-text text-dark font-weight-light text-right pt-1">€ 120.00</p>
+                                 </small>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-2 px-0">
+                 <div class="card shadow-sm border-0">
+                     <img src="https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwf32c2262/products/A045-897-view1.jpg?sw=300&sh=330&sm=fit&sfrm=png"
+                         class="card-img-top p-0" alt="img1">
+                     <div class="card-body py-1 px-3">
+                         <div class="row d-flex justify-content-around">
+                             <h6 class="card-title text-dark font-weight-bolder text-center pt-1">Sentry X</h5>
+                                 <small>
+                                     <p class="card-text text-dark font-weight-light text-right pt-1">€ 90.00</p>
+                                 </small>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-2 px-0">
+                 <div class="card shadow-sm border-0">
+                     <img src="https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw4b3dc09e/products/A944-2255-view1.jpg?sw=300&sh=330&sm=fit&sfrm=png"
+                         class="card-img-top p-0" alt="img1">
+                     <div class="card-body py-1 px-3">
+                         <div class="row d-flex justify-content-around">
+                             <h6 class="card-title text-dark font-weight-bolder text-center pt-1">Sentry Dark</h6>
+                             <small>
+                                 <p class="card-text text-dark font-weight-light text-right pt-1">€ 110.00</p>
+                             </small>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-2 px-0">
+                 <div class="card shadow-sm border-0">
+                     <div class="view overlay zoom">
+                         <img src="https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw3e1eb0b7/products/A119-692-view1.jpg?sw=300&sh=330&sm=fit&sfrm=png"
+                             class="card-img-top p-0" alt="img1">
+                     </div>
+
+                     <div class="card-body py-1 px-3">
+                         <div class="row d-flex justify-content-around">
+                             <h6 class="card-title text-dark font-weight-bolder text-center pt-1">Time Teller P</h5>
+                                 <small>
+                                     <p class="card-text text-dark font-weight-light text-right pt-1">€ 65.00</p>
+                                 </small>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+
+
+
+     <!-- Optional JavaScript -->
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+     </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+     </script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+     </script>
+ </body>
+
+ </html>
